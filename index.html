@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyMusic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <!-- <i class="bi bi-chevron-left" id="left"></i> -->
+            <i class="bi bi-heart-fill" id="left"></i>
+            <i class="bi bi-list" id="menu"></i>
+        </div>
+        <div class="song-details">
+             <div class="thumbnail">
+                <!-- <img id="img-thumb" src="media/Shararat-From-Dhurandhar-Hindi-2025-20251215084216-500x500.jpg" alt=""> -->
+                <img src="" id="img-thumb" alt="">
+            </div>
+            <div class="songname">
+                <h1></h1>
+                <h4></h4>
+            </div>
+        </div>
+        <div class="audio">
+            <audio id="song">
+                <source src="media/Shararat Dhurandhar 128 Kbps.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <div class="audio-player">
+            <input type="range" value="0" id="range2">
+        </div>
+        <div class="time">
+            <span id="current-time">00:00</span>
+            <span></span>
+            <span id="total-time">00:00</span>
+        </div>
+        <div class="controls">
+            <i class="bi bi-skip-backward-fill" id="fast-backward"></i>
+            <i class="bi bi-play-fill" id="pause-play"> </i>
+            <i class="bi bi-skip-forward-fill" id="fast-forward"></i>
+            <i class="bi bi-shuffle" id="shuffle"></i>
+        </div>
+        <div class="playlist" id="playlist">
+            <input type="text" id="search-song"
+            placeholder="Search song..."
+            class="form-control mb-2">
+            <ul id="song-list"></ul>
+        </div>
+        <div class="playlist" id="fav-playlist">
+            <ul id="fav-song-list"></ul>
+        </div>
+        <div class="foot">
+            <label for="like">Add to Favourites</label>
+            <i class="bi bi-heart-fill" id="like"></i>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
