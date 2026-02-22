@@ -268,6 +268,39 @@ body{
     .container .song-details .songname h1{
         font-size: 30px;
     }
+
+    .playlist{
+    position:absolute;
+    width: 200px;
+    height: auto;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    top: 50px;
+    right: 70px;
+    /* overflow-y: auto; */
+    /* transition: right 0.4s ease; */
+    display: none;
+    }
+
+    .playlist li {
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    background: #ffe6ef;
+    border-radius: 8px;
+    font-size: 10px;
+    }
+
+    .playlist li:hover {
+        background: #ffb6d5;
+    }
+
+    .playlist li i {
+        font-size: 15px;
+        color: rgb(215, 96, 182);
+    }
 }
 
 @media (max-width:400px){
@@ -325,6 +358,39 @@ body{
     border-radius:50%;
     font-size:10px;
     cursor:pointer;
+    }
+
+    .playlist{
+    position:absolute;
+    width: 175px;
+    height: auto;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    padding: 8px;
+    border-radius: 10px;
+    top: 70px;
+    right: 30px;
+    /* overflow-y: auto; */
+    /* transition: right 0.4s ease; */
+    display: none;
+    }
+
+    .playlist li {
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    background: #ffe6ef;
+    border-radius: 8px;
+    font-size: 10px;
+    }
+
+    .playlist li:hover {
+        background: #ffb6d5;
+    }
+
+    .playlist li i {
+        font-size: 15px;
+        color: rgb(215, 96, 182);
     }
 }
 
@@ -391,5 +457,38 @@ body{
     border-radius: 50%;
     /* box-shadow: 0 0 5px 5px lightgoldenrodyellow; */
     margin-bottom: 10px;
+    }
+
+    .playlist{
+    position:absolute;
+    width: 140px;
+    height: auto;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    padding: 8px;
+    border-radius: 10px;
+    top: 70px;
+    right: 17.5px;
+    /* overflow-y: auto; */
+    /* transition: right 0.4s ease; */
+    display: none;
+    }
+
+    .playlist li {
+    padding: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    background: #ffe6ef;
+    border-radius: 8px;
+    font-size: 8px;
+    }
+
+    .playlist li:hover {
+        background: #ffb6d5;
+    }
+
+    .playlist li i {
+        font-size: 15px;
+        color: rgb(215, 96, 182);
     }
 }
