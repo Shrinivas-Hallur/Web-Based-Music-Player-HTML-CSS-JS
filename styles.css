@@ -246,3 +246,48 @@ body{
     border-radius: 8px;
     font-size: 14px;
 }
+
+
+@media (max-width:550px){
+    .container{
+    border:1px solid lightcoral;
+    border-radius: 10px;
+    padding: 15px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    width: 350px;
+    height: auto;
+    box-shadow: 0 0 5px 5px lightsalmon;
+    position: relative;
+    }
+
+    .container .song-details .songname h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:400px){
+    .container{
+    border:1px solid lightcoral;
+    border-radius: 10px;
+    padding: 15px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    width: 275px;
+    height: auto;
+    box-shadow: 0 0 5px 5px lightsalmon;
+    position: relative;
+    }
+
+    .container .song-details .songname h1{
+        font-size: 20px;
+    }
+
+    .container .song-details .songname h4{
+        font-size: 17px;
+    }
+}
